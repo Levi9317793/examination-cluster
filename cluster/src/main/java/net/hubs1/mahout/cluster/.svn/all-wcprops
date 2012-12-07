@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/Search/!svn/ver/8150/trunk/mahout-cluster/src/main/java/net/hubs1/mahout/cluster
+END
+CRLFInputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/Search/!svn/ver/8257/trunk/mahout-cluster/src/main/java/net/hubs1/mahout/cluster/CRLFInputFormat.java
+END
+CRLFMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Search/!svn/ver/8144/trunk/mahout-cluster/src/main/java/net/hubs1/mahout/cluster/CRLFMapper.java
+END
+CRLFSeparatedToSequenceFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/Search/!svn/ver/8144/trunk/mahout-cluster/src/main/java/net/hubs1/mahout/cluster/CRLFSeparatedToSequenceFile.java
+END

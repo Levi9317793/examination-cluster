@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.hubs1.mahout</groupId>
+  <artifactId>cluster</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>mahout-cluster</name>
+  <dependencies>
+      <dependency>
+        <artifactId>mahout-core</artifactId>
+        <groupId>org.apache.mahout</groupId>
+        <version>0.7</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.mahout</groupId>
+        <version>0.7</version>
+        <artifactId>mahout-core</artifactId>
+        <type>test-jar</type>
+        <scope>test</scope>
+      </dependency>
+      
+      <dependency>
+        <artifactId>mahout-math</artifactId>
+        <groupId>org.apache.mahout</groupId>
+        <version>0.7</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.mahout</groupId>
+        <version>0.7</version>
+        <artifactId>mahout-math</artifactId>
+        <type>test-jar</type>
+      </dependency>
+      
+      <dependency>
+        <artifactId>mahout-integration</artifactId>
+        <groupId>org.apache.mahout</groupId>
+        <version>0.7</version>
+      </dependency>
+
+      <dependency>
+        <artifactId>mahout-buildtools</artifactId>
+        <groupId>org.apache.mahout</groupId>
+        <version>0.7</version>
+      </dependency>
+      
+  </dependencies>
+   <build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<appendAssemblyId>false</appendAssemblyId>
+					<descriptors>
+						<descriptor>src/main/assemble/package_mr.xml</descriptor>
+					</descriptors>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
