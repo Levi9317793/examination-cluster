@@ -40,6 +40,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Reads records that are delimited by a specific begin/end tag.
+ * 
  */
 public class CRLFInputFormat extends  TextInputFormat {
 
